@@ -1,3 +1,32 @@
+/* Font Face Declarations */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/harcourts/fonts/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/harcourts/fonts/SourceSansPro-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/harcourts/fonts/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/harcourts/fonts/SourceSansPro-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -6,7 +35,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -197,6 +226,46 @@ footer {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Typography Styles based on Brand Guidelines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Main Headers */
+h1 {
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+/* Subheadings */
+h2 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+/* Secondary Subheadings */
+h3 {
+    font-size: 9.5px;
+    line-height: 13px;
+    font-weight: 600;
+}
+
+/* Body Copy */
+p {
+    font-size: 9.5px;
+    line-height: 13px;
+    font-weight: 400;
 }
 
 /* Section Headers */
