@@ -67,52 +67,111 @@ h6 {
     color: var(--navy);
 }
 
-/* Header and Navigation */
-header {
-    background-color: var(--white);
-    border-bottom: 1px solid var(--light-grey);
+/* Header and Hero */
+.hero {
+    background-image: url('cat-han-VgyN_CWXQVM-unsplash.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.top-nav {
-    padding: 1rem 0;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 31, 73, 0.7);
+    /* Navy overlay with opacity */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.hero-content .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .company {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-button {
+    background-color: var(--white);
+    color: var(--navy);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button.highlight {
+    background-color: var(--cyan);
+    color: var(--white);
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-grey);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
 }
 
 .company-logo {
-    height: 50px;
+    height: 40px;
     width: auto;
-}
-
-.agent-info h1 {
-    color: var(--navy);
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-}
-
-.subtitle {
-    color: var(--black);
-    font-size: 0.9rem;
 }
 
 .primary-nav {
     display: flex;
+    gap: 3rem;
+    align-items: center;
     list-style: none;
-    gap: 2rem;
 }
 
 .primary-nav a {
@@ -124,6 +183,19 @@ header {
 
 .primary-nav a:hover {
     color: var(--cyan);
+}
+
+.primary-nav .cta-button {
+    background-color: var(--cyan);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.primary-nav .cta-button:hover {
+    background-color: var(--navy);
+    transform: translateY(-2px);
 }
 
 /* Hero Section */
