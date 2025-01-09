@@ -86,10 +86,22 @@ header {
     padding: 0 2rem;
 }
 
-.logo h1 {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.company-logo {
+    height: 50px;
+    width: auto;
+}
+
+.agent-info h1 {
     color: var(--navy);
     font-size: 1.8rem;
     font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 
 .subtitle {
@@ -180,9 +192,16 @@ section:nth-child(even) {
 
 /* Footer */
 footer {
-    background-color: var(--navy);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--navy);
     padding: 3rem 0 1rem;
+    border-top: 1px solid var(--light-grey);
+}
+
+footer img.company-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 2rem;
 }
 
 .footer-content {
@@ -196,7 +215,7 @@ footer {
 }
 
 .footer-nav a {
-    color: var(--white);
+    color: var(--navy);
     text-decoration: none;
     line-height: 2;
 }
@@ -210,7 +229,7 @@ footer {
 }
 
 .legal-links a {
-    color: var(--white);
+    color: var(--navy);
     text-decoration: none;
     font-size: 0.9rem;
     opacity: 0.8;
