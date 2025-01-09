@@ -110,11 +110,21 @@ body {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero-content .title,
-.hero-content .company {
+.about-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.1rem;
+    line-height: 3.0rem;
+    color: var(--black);
+}
+
+.about-text .title {
     font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.about-text .company {
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .contact-buttons {
