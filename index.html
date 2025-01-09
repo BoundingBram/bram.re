@@ -12,6 +12,27 @@
   </head>
   <body>
     <header>
+      <nav class="main-nav">
+        <div class="nav-container">
+          <div class="logo">
+            <img
+              src="assets/harcourts/logos/GrenHarc_Logo_RGB.png"
+              alt="Harcourts Grenadier"
+              class="company-logo"
+            />
+          </div>
+          <div class="nav-links">
+            <a href="https://www.grenadier.co.nz/live-auctions"
+              >Live Auctions</a
+            >
+            <a
+              href="https://www.grenadier.co.nz/people/bramley-maclean/request-an-appraisal"
+              class="cta-button"
+              >Request an Appraisal</a
+            >
+          </div>
+        </div>
+      </nav>
       <div class="hero">
         <div class="hero-image">
           <img
@@ -39,29 +60,6 @@
           </div>
         </div>
       </div>
-      <nav class="main-nav">
-        <div class="nav-container">
-          <div class="logo">
-            <img
-              src="assets/harcourts/logos/GrenHarc_Logo_RGB.png"
-              alt="Harcourts Grenadier"
-              class="company-logo"
-            />
-          </div>
-          <div class="nav-links">
-            <a href="#for-sale">For Sale</a>
-            <a href="#sold">Sold</a>
-            <a href="https://www.grenadier.co.nz/live-auctions"
-              >Live Auctions</a
-            >
-            <a
-              href="https://www.grenadier.co.nz/people/bramley-maclean/request-an-appraisal"
-              class="cta-button"
-              >Request an Appraisal</a
-            >
-          </div>
-        </div>
-      </nav>
     </header>
 
     <main>
@@ -92,45 +90,41 @@
           </div>
         </div>
       </section>
-
       <section id="sell" class="sell-property">
         <div class="container">
           <h2>Looking to Sell Your Property?</h2>
           <div class="sell-content">
-            <p>
-              Selling your home is a big deal. After all, for the majority of
-              us, it's the most valuable asset we own. This is why choosing the
-              right company and the right consultant is so important.
-            </p>
-            <p>
-              Booking a property appraisal is the first step in the process. I
-              will visit your property and provide you with nearby recent sales
-              and current listings via a detailed comparative market analysis.
-            </p>
-            <div class="cta-buttons">
-              <a
-                href="https://www.grenadier.co.nz/people/bramley-maclean/request-an-appraisal"
-                class="cta-button"
-                >Book an Appraisal</a
-              >
+            <div class="sell-text">
+              <p>
+                Selling your home is a big deal. After all, for the majority of
+                us, it's the most valuable asset we own. This is why choosing
+                the right company and the right consultant is so important.
+              </p>
+              <p>
+                Booking a property appraisal is the first step in the process. I
+                will visit your property and provide you with nearby recent
+                sales and current listings via a detailed comparative market
+                analysis.
+              </p>
+              <p>
+                Together, we'll develop a comprehensive marketing strategy
+                tailored to your property's unique features and target audience.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="estimate" class="property-estimate">
-        <div class="container">
-          <h2>Want an Instant Property Report?</h2>
-          <p>
-            Get an instant price estimate from New Zealand's leading real estate
-            data provider, Real Estate Institute of New Zealand (REINZ). See how
-            the value of your property has changed over the years with past
-            sales data and instantly review recent sales in the area.
-          </p>
-          <div class="cta-buttons">
-            <a href="#estimate" class="cta-button"
-              >Get a Property Estimate Now</a
-            >
+            <div class="sell-cta">
+              <div class="sell-cta-content">
+                <h3>Ready to get started?</h3>
+                <p>
+                  Take the first step towards selling your property with
+                  confidence.
+                </p>
+                <a
+                  href="https://www.grenadier.co.nz/people/bramley-maclean/request-an-appraisal"
+                  class="cta-button"
+                  >Book an Appraisal</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -138,7 +132,28 @@
       <section id="contact" class="contact-form">
         <div class="container">
           <h2>Get in Touch Today</h2>
-          <form id="contact-form">
+          <form
+            id="contact-form"
+            action="mailto:bramley.maclean@harcourts.co.nz"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
             <p class="form-disclaimer">
               Don't worry, we never pass your details onto any third parties. By
               continuing you agree to our
