@@ -5,89 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Bram Real Estate - Your trusted partner in finding the perfect home"
+      content="Bramley Maclean - Licensed Sales Consultant at Harcourts Christchurch City"
     />
-    <title>Bram Real Estate | Home</title>
+    <title>Bramley Maclean | Harcourts Christchurch City</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <h1>Bram Real Estate</h1>
+      <nav class="top-nav">
+        <div class="nav-container">
+          <div class="logo">
+            <h1>Bramley Maclean</h1>
+            <p class="subtitle">Licensed Sales Consultant</p>
+          </div>
+          <ul class="primary-nav">
+            <li><a href="#for-sale">For Sale</a></li>
+            <li><a href="#sold">Sold</a></li>
+            <li><a href="#live-auctions">Live Auctions</a></li>
+            <li>
+              <a href="#appraisal" class="cta-button">Request an Appraisal</a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#properties">Properties</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
       </nav>
     </header>
 
     <main>
-      <section id="hero">
-        <h2>Find Your Dream Home</h2>
-        <p>With over 20 years of experience in the real estate market</p>
-        <button>View Properties</button>
-      </section>
-
-      <section id="featured-properties">
-        <h2>Featured Properties</h2>
-        <div class="property-grid">
-          <div class="property-card">
-            <img src="/api/placeholder/400/300" alt="Modern House" />
-            <h3>Modern Family Home</h3>
-            <p>4 beds • 3 baths • 2,500 sq ft</p>
-            <p class="price">$750,000</p>
-          </div>
-          <div class="property-card">
-            <img src="/api/placeholder/400/300" alt="Luxury Apartment" />
-            <h3>Downtown Luxury Apartment</h3>
-            <p>2 beds • 2 baths • 1,200 sq ft</p>
-            <p class="price">$450,000</p>
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2>Bramley <strong>Maclean</strong></h2>
+            <p class="title">Licensed Sales Consultant</p>
+            <p class="company">Harcourts Christchurch City</p>
+            <div class="contact-buttons">
+              <a href="tel:" class="contact-button">Phone</a>
+              <a href="mailto:" class="contact-button">Email</a>
+              <a href="#appraisal" class="contact-button highlight"
+                >Request an Appraisal</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-          <div class="service">
-            <h3>Buying</h3>
-            <p>Find your perfect home with our expert guidance</p>
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <p>
+              From pitches to properties and taglines to titles, I've never been
+              one to stay idle. Whether you're looking for the perfect
+              investment, your dream home, or need convincing that the lime
+              green shag rug in the living room is actually 'modern chic' - I'm
+              your agent.
+            </p>
+            <p>
+              Confidently leveraging a decade of communications and advertising
+              expertise, I believe every property has a story, and I know how to
+              tell yours.
+            </p>
+            <!-- Rest of the about content -->
           </div>
-          <div class="service">
-            <h3>Selling</h3>
-            <p>Get the best value for your property</p>
+        </div>
+      </section>
+
+      <section id="sell" class="sell-property">
+        <div class="container">
+          <h2>Looking to Sell Your Property?</h2>
+          <div class="sell-content">
+            <p>
+              Selling your home is a big deal. After all, for the majority of
+              us, it's the most valuable asset we own. This is why choosing the
+              right company and the right consultant is so important.
+            </p>
+            <p>
+              Booking a property appraisal is the first step in the process. I
+              will visit your property and provide you with nearby recent sales
+              and current listings via a detailed comparative market analysis.
+            </p>
+            <div class="cta-buttons">
+              <a href="#book-appraisal" class="cta-button">Book an Appraisal</a>
+            </div>
           </div>
-          <div class="service">
-            <h3>Investment</h3>
-            <p>Discover lucrative real estate opportunities</p>
+        </div>
+      </section>
+
+      <section id="estimate" class="property-estimate">
+        <div class="container">
+          <h2>Want an Instant Property Report?</h2>
+          <p>
+            Get an instant price estimate from New Zealand's leading real estate
+            data provider, Real Estate Institute of New Zealand (REINZ). See how
+            the value of your property has changed over the years with past
+            sales data and instantly review recent sales in the area.
+          </p>
+          <div class="cta-buttons">
+            <a href="#estimate" class="cta-button"
+              >Get a Property Estimate Now</a
+            >
           </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-form">
+        <div class="container">
+          <h2>Get in Touch Today</h2>
+          <form id="contact-form">
+            <!-- Form fields would go here -->
+            <p class="form-disclaimer">
+              Don't worry, we never pass your details onto any third parties. By
+              continuing you agree to our
+              <a href="#terms">Terms of Service</a> and
+              <a href="#privacy">Privacy Policy</a>.
+            </p>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="contact-info">
-          <h3>Contact Us</h3>
-          <p>Email: info@bram.re</p>
-          <p>Phone: (555) 123-4567</p>
-          <p>Address: 123 Real Estate Ave, City, State 12345</p>
+      <div class="footer-content container">
+        <div class="footer-primary">
+          <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#for-sale">For Sale</a></li>
+              <li><a href="#sold">Sold</a></li>
+              <li><a href="#live-auctions">Live Auctions</a></li>
+              <li><a href="#appraisal">Request an Appraisal</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
+        <div class="footer-secondary">
+          <p>&copy; 2025 Harcourts</p>
+          <p>Harcourts Grenadier Licensed under REAA 2008</p>
+          <ul class="legal-links">
             <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-            <li><a href="#careers">Careers</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#disclaimer">Disclaimer</a></li>
+            <li><a href="#trademarks">Trade Marks & Legal</a></li>
+            <li><a href="#complaints">Complaints</a></li>
+            <li><a href="#advice">Consumer Advice</a></li>
           </ul>
         </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2025 Bram Real Estate. All rights reserved.</p>
       </div>
     </footer>
   </body>
